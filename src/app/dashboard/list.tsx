@@ -1,5 +1,3 @@
-'use client'
-
 const fetchData = async () => {
   await new Promise((resolve) => {
     setTimeout(resolve, 2000)
@@ -26,6 +24,7 @@ const fetchData = async () => {
 
 export const List = async () => {
   const response = await fetchData()
+  console.log({ response })
 
   return (
     <ul>
