@@ -21,6 +21,7 @@ const fetchData = async () => {
 
 export const Photos = async () => {
   const response = await fetchData()
+  console.log({ response })
 
   return (
     <ul>
