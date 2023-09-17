@@ -5,26 +5,22 @@ const fetchData = async () => {
 
   return [
     {
-      id: 13,
-      title: 'Let It Be',
-      year: 1970,
+      id: 1,
+      title: 'photo 1',
     },
     {
-      id: 12,
-      title: 'Abbey Road',
-      year: 1969,
+      id: 2,
+      title: 'photo 2',
     },
     {
-      id: 11,
-      title: 'Yellow Submarine',
-      year: 1969,
+      id: 3,
+      title: 'photo 3',
     },
   ]
 }
 
-export const List = async () => {
+export const Photos = async () => {
   const response = await fetchData()
-  console.log({ response })
 
   return (
     <ul>
